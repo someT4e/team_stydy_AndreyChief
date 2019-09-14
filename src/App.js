@@ -2,12 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Link = () => {
+const Link = (props) => {
 
-  const url = 'http://google.com' ;
   return ( 
     <a 
-      href= {url} > Google </a>);
+      className="App-link"
+      href={props.linkUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >{props.linkText}</a>)
 };
 
 function App() {
@@ -26,7 +29,10 @@ function App() {
         >
           Learn React
         </a>
-        <Link />
+        <Link 
+        linkText='Google'
+        linkUrl='https://google.com'
+        />
       </header>
     </div>
   );
