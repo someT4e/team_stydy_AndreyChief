@@ -7,10 +7,10 @@ const Link = (props) => {
   return ( 
     <a 
       className="App-link"
-      href={props.linkUrl}
+      href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-    >{props.linkText}</a>)
+    >{props.children}</a>)
 };
 
 function App() {
@@ -27,12 +27,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React 1
         </a>
         <Link 
-        linkText='Google'
-        linkUrl='https://google.com'
-        />
+            href='https://google.com'
+               
+        >Google</Link>
       </header>
     </div>
   );
