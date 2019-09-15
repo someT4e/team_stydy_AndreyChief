@@ -21,16 +21,13 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 1
-        </a>
         <Link 
-            href='https://google.com'
+          href="https://reactjs.org" >
+                 
+          Learn React 1
+        </Link>
+        <Link 
+          href='https://google.com'
                
         >Google</Link>
       </header>
