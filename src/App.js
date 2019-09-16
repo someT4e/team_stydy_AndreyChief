@@ -1,15 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Link from './components/link'; 
 
-const Link = ({href, children}) => {
-  return  (
-    <a 
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    > {children} </a>)
-};
+
 
 function App() {
   return (
