@@ -2,15 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Link = (props) => {
-
-  return ( 
+const Link = ({href, children}) => {
+  return  (
     <a 
-      className="App-link"
-      href={props.href}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
-    >{props.children}</a>)
+    > {children} </a>)
 };
 
 function App() {
@@ -21,15 +19,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Link 
-          href="https://reactjs.org" >
-                 
-          Learn React 1
-        </Link>
-        <Link 
-          href='https://google.com'
-               
-        >Google</Link>
+        <Link href="https://reactjs.org"> Learn React 1</Link>
+        <Link href="https://google.com"> Google </Link>
       </header>
     </div>
   );
