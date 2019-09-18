@@ -10,5 +10,8 @@ node {
     stage('build') {
       sh 'npm run build'
     }
+    stage('lint') {
+      sh 'npm run lint'
+    }
   }
 }
