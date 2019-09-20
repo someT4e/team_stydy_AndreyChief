@@ -1,0 +1,17 @@
+node_modules/**
+**/node_modules/**
+coverage/**
+**/dist/**
+
+dist/**
+/back_dist/**
+static/**
+dev-static/**
+release/**
+
+flow-typed/**
+out/**
+arb/**
+
+build/**
+src/serviceWorker.js
