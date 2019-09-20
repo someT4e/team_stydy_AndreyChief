@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Link from './components/index';  //импорт Link
-
+import { Link } from './components';
 
 
 function App() {
@@ -11,7 +10,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          {' '}
+          <code>src/App.js</code>
+          {' '}
+and save to reload.
         </p>
         <Link href="https://reactjs.org"> Learn React 1</Link>
         <Link href="https://google.com"> Google </Link>

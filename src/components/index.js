@@ -1,1 +1,1 @@
-export Link from './Link/Link'; //реэкспорт Link
+export { Link } from './Link/Link';
