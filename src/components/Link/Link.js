@@ -9,4 +9,4 @@ const Link = ({href, children}) => {
       > {children} </a>)
   };
 
-export default Link;
+export default Link; //Делаю экспорт Link
