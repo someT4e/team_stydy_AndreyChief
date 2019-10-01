@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Link = ({ href, children }) => {
-  (
+ return ( 
     <a
       href={href}
       target="_blank"
@@ -14,4 +14,4 @@ const Link = ({ href, children }) => {
     </a>);
 };
 
-export { Link };
+export {Link};
