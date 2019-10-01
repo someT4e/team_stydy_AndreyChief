@@ -1,25 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from './components';
+import About from './pages/about';
+import Pg404 from './pages/404';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> 
+      <div className="App">
+        
+        <Route path="/about" component={About} />
+        <Route path="/404" component={Pg404} />
+        <div className="App-body">
+          <img src={logo} className="App-logo" alt="logo" />
+          <Link href="https://reactjs.org"> Learn React 1</Link>
+          <Link href="https://google.com"> Google </Link>
+        </div>  
+      </div>
+    </Router>  
   );
 }
 
